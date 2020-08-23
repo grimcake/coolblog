@@ -163,10 +163,10 @@ export const constantRoutes = [
         meta: { title: 'Snake', icon: 'table' }
       },
       {
-        path: 'snake',
-        name: 'snake',
-        component: () => import('@/views/game/snake/index'),
-        meta: { title: 'Snake', icon: 'table' }
+        path: '2048',
+        name: '2048',
+        component: () => import('@/views/game/2048/index'),
+        meta: { title: '2048', icon: 'table' }
       },
     ]
   },
