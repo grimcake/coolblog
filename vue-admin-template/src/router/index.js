@@ -150,6 +150,28 @@ export const constantRoutes = [
   },
 
   {
+    path: '/game',
+    component: Layout,
+    // redirect: '/game/snake',
+    name: 'game',
+    meta: { title: 'Game', icon: 'el-icon-s-help' },
+    children: [
+      {
+        path: 'snake',
+        name: 'snake',
+        component: () => import('@/views/game/snake/index'),
+        meta: { title: 'Snake', icon: 'table' }
+      },
+      {
+        path: 'snake',
+        name: 'snake',
+        component: () => import('@/views/game/snake/index'),
+        meta: { title: 'Snake', icon: 'table' }
+      },
+    ]
+  },
+
+  {
     path: 'external-link',
     component: Layout,
     children: [
